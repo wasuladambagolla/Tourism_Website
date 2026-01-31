@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours | GlobalTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>GlobalTravel</h1></a>
+        </div>
+        <div class="auth-buttons" id="auth-section">
+            <a href="login.html" class="btn btn-login">Sign in</a>
+            <a href="#" class="btn btn-register">Register</a>
+        </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <nav class="tab-nav">
+        <a href="index.html" class="tab-item"><span>🏠</span> Stays</a>
+        <a href="tours.html" class="tab-item"><span>🌍</span> Tours</a>
+        <a href="guides.html" class="tab-item"><span>🚶</span> Guides</a>
+        <a href="rentals.html" class="tab-item"><span>🚗</span> Car rentals</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="section-header">
+            <h2>Exclusive Tour Packages</h2>
+            <p>Unforgettable experiences curated just for you</p>
+        </div>
+
+        <div class="card-grid">
+            <!-- Tour 1: African Safari -->
+            <div class="property-card" onclick="processBooking('African Safari Adventure', '$1,200')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=500&q=60" alt="Safari">
+                    <span class="badge">7 Days</span>
+                </div>
+                <div class="card-body">
+                    <h3>African Safari Adventure</h3>
+                    <div class="location">📍 Serengeti, Tanzania</div>
+                    <div class="rating">
+                        <span class="score">9.9</span>
+                        <span class="price-label">Life-changing · 450 reviews</span>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">All-inclusive</div>
+                        <div class="price-value">$1,200</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 2: European Heritage -->
+            <div class="property-card" onclick="processBooking('European Heritage Tour', '$1,800')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=500&q=60" alt="Europe">
+                    <span class="badge">10 Days</span>
+                </div>
+                <div class="card-body">
+                    <h3>European Heritage Tour</h3>
+                    <div class="location">📍 Italy, France, Spain</div>
+                    <div class="rating">
+                        <span class="score">9.6</span>
+                        <span class="price-label">Culture Trip · 890 reviews</span>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Guided Group</div>
+                        <div class="price-value">$1,800</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour 3: Amazon Jungle -->
+            <div class="property-card" onclick="processBooking('Amazon Jungle Expedition', '$950')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=60" alt="Amazon">
+                    <span class="badge">5 Days</span>
+                </div>
+                <div class="card-body">
+                    <h3>Amazon Jungle Expedition</h3>
+                    <div class="location">📍 Manaus, Brazil</div>
+                    <div class="rating">
+                        <span class="score">9.3</span>
+                        <span class="price-label">Extreme · 230 reviews</span>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Eco-Friendly</div>
+                        <div class="price-value">$950</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>GlobalTravel</h4>
+                <p>Making travel accessible and enjoyable for everyone, everywhere.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Resource</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Discover</h4>
+                <ul>
+                    <li><a href="#">Travel Articles</a></li>
+                    <li><a href="#">Holiday Rentals</a></li>
+                    <li><a href="#">Travel Communities</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GlobalTravel. All rights reserved. University Course Project.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

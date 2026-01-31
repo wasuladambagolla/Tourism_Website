@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals | GlobalTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>GlobalTravel</h1></a>
+        </div>
+        <div class="auth-buttons" id="auth-section">
+            <a href="login.html" class="btn btn-login">Sign in</a>
+            <a href="#" class="btn btn-register">Register</a>
+        </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <nav class="tab-nav">
+        <a href="index.html" class="tab-item"><span>🏠</span> Stays</a>
+        <a href="tours.html" class="tab-item"><span>🌍</span> Tours</a>
+        <a href="guides.html" class="tab-item"><span>🚶</span> Guides</a>
+        <a href="rentals.html" class="tab-item"><span>🚗</span> Car rentals</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="section-header">
+            <h2>Vehicle Rentals</h2>
+            <p>Freedom to explore at your own pace with our premium fleet</p>
+        </div>
+
+        <div class="card-grid">
+            <!-- Vehicle 1: Tesla -->
+            <div class="property-card" onclick="processBooking('Tesla Model 3', '$120/day')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=500&q=60" alt="Tesla">
+                    <span class="badge">Electric</span>
+                </div>
+                <div class="card-body">
+                    <h3>Tesla Model 3</h3>
+                    <div class="location">📍 Available in 50+ Cities</div>
+                    <div class="rating">
+                        <span class="score">9.8</span>
+                        <span class="price-label">Premium · Eco-friendly</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        Latest electric vehicle with 300+ mile range. Perfect for eco-conscious travelers.
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$120</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 2: Jeep -->
+            <div class="property-card" onclick="processBooking('Jeep Wrangler', '$95/day')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=60" alt="Jeep">
+                    <span class="badge">4x4</span>
+                </div>
+                <div class="card-body">
+                    <h3>Jeep Wrangler 4xe</h3>
+                    <div class="location">📍 Available at Airports</div>
+                    <div class="rating">
+                        <span class="score">9.2</span>
+                        <span class="price-label">Adventure · Rugged</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        All-terrain capability. Ideal for off-road adventures and mountain exploration.
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$95</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 3: Ducati -->
+            <div class="property-card" onclick="processBooking('Ducati Multistrada', '$150/day')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=500&q=60" alt="Bike">
+                    <span class="badge">Motorcycle</span>
+                </div>
+                <div class="card-body">
+                    <h3>Ducati Multistrada</h3>
+                    <div class="location">📍 Italy & Europe</div>
+                    <div class="rating">
+                        <span class="score">9.7</span>
+                        <span class="price-label">Performance · Sport</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        High-performance sport bike. Experience the thrill of European mountain roads.
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$150</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>GlobalTravel</h4>
+                <p>Making travel accessible and enjoyable for everyone, everywhere.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Resource</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Discover</h4>
+                <ul>
+                    <li><a href="#">Travel Articles</a></li>
+                    <li><a href="#">Holiday Rentals</a></li>
+                    <li><a href="#">Travel Communities</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GlobalTravel. All rights reserved. University Course Project.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

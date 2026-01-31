@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTravel | Book Your Next Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>GlobalTravel</h1></a>
+        </div>
+        <div class="auth-buttons" id="auth-section">
+            <a href="login.html" class="btn btn-login">Sign in</a>
+            <a href="#" class="btn btn-register">Register</a>
+        </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <nav class="tab-nav">
+        <a href="index.html" class="tab-item"><span>🏠</span> Stays</a>
+        <a href="tours.html" class="tab-item"><span>🌍</span> Tours</a>
+        <a href="guides.html" class="tab-item"><span>🚶</span> Guides</a>
+        <a href="rentals.html" class="tab-item"><span>🚗</span> Car rentals</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find your next stay</h2>
+        <p>Search deals on hotels, homes, and much more...</p>
+    </section>
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <div class="search-input-group">
+            <span>📍</span>
+            <input type="text" id="main-search" placeholder="Where are you going?">
+        </div>
+        <div class="search-input-group">
+            <span>📅</span>
+            <input type="date" placeholder="Check-in — Check-out">
+        </div>
+        <button class="search-btn" onclick="runSearch()">Search</button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="section-header">
+            <h2>Trending Destinations</h2>
+            <p>Most popular choices for travelers from around the world</p>
+        </div>
+
+        <div class="card-grid">
+            <!-- Property 1: Bali -->
+            <div class="property-card" onclick="processBooking('Luxury Villa in Bali', '$450')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=60" alt="Bali Villa">
+                    <span class="badge">Top Rated</span>
+                </div>
+                <div class="card-body">
+                    <h3>Tropical Paradise Villa</h3>
+                    <div class="location">📍 Ubud, Bali</div>
+                    <div class="rating">
+                        <span class="score">9.8</span>
+                        <span class="price-label">Exceptional · 1,240 reviews</span>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Starting from</div>
+                        <div class="price-value">$450</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 2: New York -->
+            <div class="property-card" onclick="processBooking('Penthouse in New York', '$890')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=500&q=60" alt="NYC Penthouse">
+                </div>
+                <div class="card-body">
+                    <h3>Skyline View Penthouse</h3>
+                    <div class="location">📍 Manhattan, NY</div>
+                    <div class="rating">
+                        <span class="score">9.5</span>
+                        <span class="price-label">Superb · 850 reviews</span>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Starting from</div>
+                        <div class="price-value">$890</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 3: Swiss Alps -->
+            <div class="property-card" onclick="processBooking('Chalet in Swiss Alps', '$320')">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=500&q=60" alt="Swiss Chalet">
+                    <span class="badge">Winter Deal</span>
+                </div>
+                <div class="card-body">
+                    <h3>Alpine Magic Chalet</h3>
+                    <div class="location">📍 Zermatt, Switzerland</div>
+                    <div class="rating">
+                        <span class="score">9.2</span>
+                        <span class="price-label">Very Good · 420 reviews</span>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Starting from</div>
+                        <div class="price-value">$320</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>GlobalTravel</h4>
+                <p>Making travel accessible and enjoyable for everyone, everywhere.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Resource</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Discover</h4>
+                <ul>
+                    <li><a href="#">Travel Articles</a></li>
+                    <li><a href="#">Holiday Rentals</a></li>
+                    <li><a href="#">Travel Communities</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GlobalTravel. All rights reserved. University Course Project.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
