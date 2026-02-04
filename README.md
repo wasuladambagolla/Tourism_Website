@@ -95,10 +95,6 @@ Simple vanilla JavaScript with these functions:
 4. User is redirected to home page
 5. Header updates to show "Hello, admin" with Logout button
 
-### Demo Credentials
-- **Username:** `admin`
-- **Password:** `password123`
-
 ### Session Management
 - Session stored in browser's `localStorage`
 - Persists across page refreshes
@@ -254,7 +250,6 @@ This project demonstrates:
 
 Possible features to add:
 - Backend database for persistent bookings
-- User registration system
 - Payment integration
 - Review and rating system
 - Advanced search filters
