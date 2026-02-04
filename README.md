@@ -53,24 +53,10 @@ globaltravel_vanilla/
 
 ## How to Run
 
-### Option 1: Direct File Opening
+### Direct File Opening
 1. Open `index.html` in any web browser
 2. Navigate using the tab menu
-3. Test the login system with credentials: `admin` / `password123`
-
-### Option 2: Local Server (Recommended)
-Using Python:
-```bash
-cd globaltravel_vanilla
-python -m http.server 8000
-# Visit http://localhost:8000
-```
-
-Using Node.js:
-```bash
-cd globaltravel_vanilla
-npx http-server
-```
+3. Test the login system with registered credentials
 
 ---
 
