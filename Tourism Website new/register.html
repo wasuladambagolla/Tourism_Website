@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Beyond Ceylon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-container">
+        <div class="header-logo">
+            <a href="index.html"><h1>Beyond <span>Ceylon</span></h1></a>
+        </div>
+        <form id="registrationForm" class="register-form">
+            <h2>Create Your Account</h2>
+            <p>Join us to explore the Wonder of Asia</p>
+
+            <div class="input-group">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" placeholder="Enter your Username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Min. 8 characters" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Repeat your password" required>
+            </div>
+
+            <button type="submit" class="register-btn">Register</button>
+
+            <p class="login-link">Already have an account? <a href="login.html">Sign in</a></p>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

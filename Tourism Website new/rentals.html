@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Ceylon | Book Your Next Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>Beyond Ceylon</h1></a>
+        </div>
+        <div class="auth-buttons" id="auth-section">
+            <a href="login.html" class="btn btn-login">Sign in</a>
+            <a href="register.html" class="btn btn-register">Register</a>
+        </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <nav class="tab-nav">
+        <a href="index.html" class="tab-item"><span>🏠</span> Explore</a>
+        <a href="tours.html" class="tab-item"><span>🏖️</span> Tour Packages</a>
+        <a href="guides.html" class="tab-item"><span>🚶</span> Guides</a>
+        <a href="rentals.html" class="tab-item"><span>🚗</span> Vehicle Rentals</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="section-header">
+            <h2>Vehicle Rentals</h2>
+            <p><i>Freedom to explore at your own pace with our premium fleet</i></p>
+        </div>
+
+        <div class="card-grid">
+            <!-- Vehicle 1: Tesla -->
+            <div class="property-card" onclick="processBooking('TOYOTA Premio', '$80/day')">
+                <div class="card-image">
+                    <img src="https://cdn.wheel-size.com/automobile/body/toyota-premio-2016-2021-1762755595.0442076.jpg" alt="premio">
+                    <span class="badge">Luxury</span>
+                </div>
+                <div class="card-body">
+                    <h3>TOYOTA Premio</h3>
+                    <div class="location">📍 Available at airports and cities</div>
+                    <div class="rating">
+                        <span class="score">9.8</span>
+                        <span class="price-label">Premium · Comfortable</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        Automatic transmission,smooth ride and high-quality features .Ideal for navigating both city streets and long-distance travel across the island.
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$80</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 2: Jeep -->
+            <div class="property-card" onclick="processBooking('TOYOTA Hilux', '$65/day')">
+                <div class="card-image">
+                    <img src="https://toyota.sanautos.com.co/wp-content/uploads/2024/07/Toyota-Hailux-Sanautos.png" alt="hilux">
+                    <span class="badge">4x4</span>
+                </div>
+                <div class="card-body">
+                    <h3>TOYOTA Hilux 4xe</h3>
+                    <div class="location">📍 Available at Yala National Park</div>
+                    <div class="rating">
+                        <span class="score">9.2</span>
+                        <span class="price-label">Adventure · Rugged</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        All-terrain capability. Ideal for off-road adventures.
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$65</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 3: Scooter -->
+            <div class="property-card" onclick="processBooking('Dio Scooty', '$10/day')">
+                <div class="card-image">
+                    <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/152781/dio-125-left-front-three-quarter-10.jpeg?isig=0" alt="dio">
+                    <span class="badge">Scooter</span>
+                </div>
+                <div class="card-body">
+                    <h3>Dio Scooty</h3>
+                    <div class="location">📍 Available at Beach side and town area</div>
+                    <div class="rating">
+                        <span class="score">9.5</span>
+                        <span class="price-label">Auto gear · Lightweight</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        Easy to handle and Ideal for solo travelers and couples
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle 4: Tuk Tuk -->
+            <div class="property-card" onclick="processBooking('Bajaj RE 4 Stroke', '$14/day')">
+                <div class="card-image">
+                    <img src="https://cdn.bajajauto.com/-/media/bajaj-auto/new-webp/3-wheeler/savings_calculator_image_re_new.webp" alt="Three Wheel">
+                    <span class="badge">Tuk Tuk</span>
+                </div>
+                <div class="card-body">
+                    <h3>Bajaj RE 4 Stroke</h3>
+                    <div class="location">📍 Available at Colombo, Negombo, Sigiriya, Nuwara Eliya, Ella, Mirissa, etc.</div>
+                    <div class="rating">
+                        <span class="score">9.0</span>
+                        <span class="price-label">freedom  · flexibility </span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
+                        Cost-effective and cheaper. Ideal for narrow village roads and hard-to-reach places.
+                    </p>
+                    <div class="price-box">
+                        <div class="price-label">/day</div>
+                        <div class="price-value">$14</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Beyond Ceylon</h4>
+                <p>Making travel accessible and enjoyable for everyone, everywhere.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Resource</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Discover</h4>
+                <ul>
+                    <li><a href="#">Travel Articles</a></li>
+                    <li><a href="#">Holiday Rentals</a></li>
+                    <li><a href="#">Travel Communities</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Beyond Ceylon. All rights reserved. University Course Project.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
