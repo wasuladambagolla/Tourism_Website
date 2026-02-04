@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Successful | Beyond Ceylon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .success-icon {
+            font-size: 80px;
+            color: #27ae60;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><h1>Beyond Ceylon</h1></a></div>
+    </header>
+
+   <main class="success-container">
+    <div class="confirmation-card">
+        <div class="status-header">
+            <span class="check-icon">✓</span>
+            <h1>Booking Details</h1>
+        </div>
+
+        <div class="message-body">
+            <h2 class="greeting">Ayubowan!</h2>
+            <p>Would you like to book:</p>
+            <h3 id="display-title" style="color: #d35400;">---</h3>
+            
+            <div class="details-box">
+                <p><strong>Rate/Price:</strong> <span id="display-price">---</span></p>
+                <p><strong>Status:</strong> <span class="badge">Pending Confirmation</span></p>
+            </div>
+
+            <p class="instruction-text">
+                Please click <strong>"Confirm Booking"</strong> below to send your request. 
+                Our team will contact you shortly to finalize the details.
+            </p>
+        </div>
+
+        <div class="action-buttons">
+            <button onclick="history.back()" class="btn-primary">Change Choice</button>
+            <button onclick="finalConfirm()" class="btn-primary">Confirm Booking</button>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const item = urlParams.get('item');
+        const price = urlParams.get('price');
+
+        if (item && price) {
+            document.getElementById('display-title').textContent = item;
+            document.getElementById('display-price').textContent = price;
+        }
+    });
+
+    function finalConfirm() {
+        alert("Success! Your booking has been recorded. Returning to home page.");
+        window.location.href = 'index.html';
+    }
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

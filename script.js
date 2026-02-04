@@ -97,22 +97,17 @@ function logout() {
 function processBooking(title, price) {
     const user = localStorage.getItem('user');
     
+    // Check if user is logged in
     if (!user) {
-        alert('Please sign in to book your trip to ' + title);
+        alert('Ayubowan! Please sign in to book your ' + title);
         window.location.href = 'login.html';
         return;
     }
     
-    const confirmBooking = confirm(
-        'Confirm booking for ' + title + ' at ' + price + '?\n\n' +
-        'Our team will contact you shortly at your registered email.'
-    );
-    
-    if (confirmBooking) {
-        alert('Booking Successful! Check your email for details.');
-    }
+    // Move to success page and pass the data in the URL
+    const url = `success.html?item=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`;
+    window.location.href = url;
 }
-
 // Search function
 function runSearch() {
     const query = document.getElementById('main-search').value;

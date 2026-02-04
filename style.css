@@ -651,3 +651,52 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
+/*-*/
+.confirmation-card {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.status-header {
+    background-color: #27ae60;
+    color: white;
+    padding: 30px;
+}
+
+.check-icon {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.message-body {
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.details-box {
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+
+
+.btn-primary { 
+    background: #d35400; 
+    color: white; 
+    padding: 12px 30px; 
+    margin: 5px;
+    margin-bottom: 10px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    
+}
