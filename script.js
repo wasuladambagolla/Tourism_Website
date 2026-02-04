@@ -19,9 +19,32 @@ function handleLogin(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const messageDiv = document.getElementById('login-message');
+
+    const savedName = localStorage.getItem('registeredName');
+    const savedPassword = localStorage.getItem('registeredPassword');
     
-    // Check credentials
-    if (username === 'admin' && password === 'password123') {
+    // CHECK DATA: Compare typed vs saved
+    if (username === savedName && password === savedPassword) {
+        alert("Login Successful! Welcome back, " + savedName);
+        // Redirect to your main landing page
+        window.location.href = "index.html"; 
+
+        // Save user to localStorage
+        localStorage.setItem('user', username);
+        
+        // Show success message
+        messageDiv.textContent = 'Success! Redirecting...';
+        messageDiv.className = 'login-message show success';
+        
+        // Redirect after 1 second
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 1000);
+    } else if(username === 'admin' && password === 'password123'){
+        alert("Login Successful! Welcome back, " + 'admin');
+        // Redirect to your main landing page
+        window.location.href = "index.html";
+        
         // Save user to localStorage
         localStorage.setItem('user', username);
         
@@ -35,7 +58,7 @@ function handleLogin(e) {
         }, 1000);
     } else {
         // Show error message
-        messageDiv.textContent = 'Invalid credentials. Try admin/password123';
+        messageDiv.textContent = 'Invalid credentials.';
         messageDiv.className = 'login-message show error';
     }
 }
@@ -59,7 +82,7 @@ function updateAuthUI() {
         // User is not logged in
         authSection.innerHTML = `
             <a href="login.html" class="btn btn-login">Sign in</a>
-            <a href="#" class="btn btn-register">Register</a>
+            <a href="register.html" class="btn btn-register">Register</a>
         `;
     }
 }
@@ -118,3 +141,33 @@ function highlightActiveTab() {
         }
     });
 }
+// register page
+document.getElementById('registrationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('Username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    // Simple validation logic
+    if (password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        return;
+    }
+    // Check if passwords match
+    if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return;
+    }
+    // SAVE DATA: Store the name and password in LocalStorage
+    localStorage.setItem('registeredName', name);
+    localStorage.setItem('registeredPassword', password);
+
+    // Success simulation
+    console.log("Registration attempt:", { name, email });
+    alert(`Welcome to Beyond Ceylon, ${name}! Your account has been created.`);
+    window.location.href = 'login.html';
+    
+    // You would typically send this data to a server here
+});

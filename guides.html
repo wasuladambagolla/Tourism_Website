@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guides | GlobalTravel</title>
+    <title>Beyond Ceylon | Book Your Next Adventure</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="index.html"><h1>GlobalTravel</h1></a>
+            <a href="index.html"><h1>Beyond Ceylon</h1></a>
         </div>
         <div class="auth-buttons" id="auth-section">
             <a href="login.html" class="btn btn-login">Sign in</a>
-            <a href="#" class="btn btn-register">Register</a>
+            <a href="register.html" class="btn btn-register">Register</a>
         </div>
     </header>
 
     <!-- Tab Navigation -->
     <nav class="tab-nav">
-        <a href="index.html" class="tab-item"><span>🏠</span> Stays</a>
-        <a href="tours.html" class="tab-item"><span>🌍</span> Tours</a>
+        <a href="index.html" class="tab-item"><span>🏠</span> Explore</a>
+        <a href="tours.html" class="tab-item"><span>🏖️</span> Tour Packages</a>
         <a href="guides.html" class="tab-item"><span>🚶</span> Guides</a>
-        <a href="rentals.html" class="tab-item"><span>🚗</span> Vehicle rentals</a>
+        <a href="rentals.html" class="tab-item"><span>🚗</span> Vehicle Rentals</a>
     </nav>
 
     <!-- Main Content -->
     <main>
         <div class="section-header">
             <h2>Expert Local Guides</h2>
-            <p>Connect with people who know the hidden gems of every city</p>
+            <p><i>Connect with people who know the hidden gems of every city</i></p>
         </div>
 
         <div class="card-grid">
             <!-- Guide 1: Nisal Binodh -->
             <div class="property-card" onclick="processBooking('Nisal Binodh - History Tour', '$40/hr')">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&w=500&q=60" alt="Guide">
-                    <span class="badge">History</span>
+                    <img src="https://img.freepik.com/premium-photo/tourist-guide_693425-31878.jpg" alt="Guide">
+                    <span class="badge">Cultural & Ancient</span>
                 </div>
                 <div class="card-body">
                     <h3>Nisal Binodh</h3>
-                    <div class="location">📍 Colombo, Sri Lanka</div>
+                    <div class="location">📍 Sigiriya, Sri Lanka</div>
                     <div class="rating">
                         <span class="score">5.0</span>
-                        <span class="price-label">Expert · 150+ tours</span>
+                        <span class="price-label">Expert · 180+ tours</span>
                     </div>
                     <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
-                        PhD in Archeology. Specializing in Colosseum and Roman Forum private tours.
+                       Licensed national tour guide specializing in Sri Lanka’s ancient kingdoms.
+                        Explore Sigiriya Rock Fortress, Dambulla Cave Temple, Polonnaruwa, and Anuradhapura with deep historical insight and storytelling. 
+                        Ideal for culture lovers and first-time visitors.
                     </p>
                     <div class="price-box">
                         <div class="price-label">/hour</div>
@@ -58,20 +60,22 @@
             </div>
 
             <!-- Guide 2: Wasula Dambagolla -->
-            <div class="property-card" onclick="processBooking('Yuki Tanaka - Food Tour', '$35/hr')">
+            <div class="property-card" onclick="processBooking('Wasula Dambagolla - Food Tour', '$35/hr')">
                 <div class="card-image">
-                    <img src="https://media.licdn.com/dms/image/v2/D5603AQEu1gNucmecmg/profile-displayphoto-scale_400_400/B56ZohOH2PHAAg-/0/1761493942995?e=1771459200&v=beta&t=8StKLpQ9jtUzrZekeMFHHvMmvDOd04r_DJgXqZ7H4G4" alt="Guide">
-                    <span class="badge">Culinary</span>
+                    <img src="https://img.freepik.com/premium-photo/tour-guides-lead-travelers-memorable-journeys-sharing-cultural-insights-historical-facts-local-stories-generated-with-ai_130181-18098.jpg" alt="Guide">
+                    <span class="badge">Safari & Nature</span>
                 </div>
                 <div class="card-body">
                     <h3>Wasula Dambagolla</h3>
                     <div class="location">📍 Kandy, Sri Lanka</div>
                     <div class="rating">
                         <span class="score">4.9</span>
-                        <span class="price-label">Foodie · 200+ tours</span>
+                        <span class="price-label">Wildlife Expert · 150+ tours</span>
                     </div>
                     <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
-                        Local chef. I'll take you to the best hidden sushi spots and street food markets.
+                        Experienced wildlife guide offering unforgettable safaris in Yala, 
+                        Udawalawe, and Bundala National Parks. Skilled in leopard tracking,
+                         bird watching, and eco-friendly tours. Perfect for photographers and nature enthusiasts.
                     </p>
                     <div class="price-box">
                         <div class="price-label">/hour</div>
@@ -80,21 +84,23 @@
                 </div>
             </div>
 
-            <!-- Guide 3: John Smith -->
-            <div class="property-card" onclick="processBooking('John Smith - Hiking Guide', '$50/hr')">
+            <!-- Guide 3: Dilshan liyanage -->
+            <div class="property-card" onclick="processBooking('Dilshan Liyanage - Hiking Guide', '$50/hr')">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=60" alt="Guide">
-                    <span class="badge">Adventure</span>
+                    <img src="https://withlocals-com-res.cloudinary.com/image/upload/w_286,h_286,c_fill,g_faces,q_auto,dpr_3.0,f_auto/a64a9f50303e91a7b3dcd7cd8a0ed659" alt="Guide">
+                    <span class="badge">Hiking & Adventure</span>
                 </div>
                 <div class="card-body">
-                    <h3>Isira Dilshan</h3>
+                    <h3> Dilshan Liyanage </h3>
                     <div class="location">📍 Galle, Sri Lanka</div>
                     <div class="rating">
                         <span class="score">5.0</span>
-                        <span class="price-label">Certified · 80+ tours</span>
+                        <span class="price-label">Certified Guide · 120+ tours</span>
                     </div>
                     <p style="font-size: 0.85rem; color: #4a4a4a; margin: 1rem 0;">
-                        Mountain rescue expert. Discover the most breathtaking trails in BC safely.
+                        Adventure-focused local guide specializing in Ella Rock, Little Adam’s Peak,
+                         Horton Plains, and scenic hill-country trails. Trained in first aid and safety, 
+                         offering trekking, cycling, and waterfall exploration experiences.
                     </p>
                     <div class="price-box">
                         <div class="price-label">/hour</div>
@@ -109,7 +115,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <h4>GlobalTravel</h4>
+                <h4>Beyond Ceylon</h4>
                 <p>Making travel accessible and enjoyable for everyone, everywhere.</p>
             </div>
             <div class="footer-col">
@@ -130,7 +136,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2026 GlobalTravel. All rights reserved. University Course Project.
+            &copy; 2026 Beyond Ceylon. All rights reserved. University Course Project.
         </div>
     </footer>
 
