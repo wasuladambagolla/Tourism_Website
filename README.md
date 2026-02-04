@@ -1,10 +1,8 @@
-# GlobalTravel - Tourism & Hospitality Booking Website
+# Beyond Ceylon - Tourism & Hospitality Booking Website
 
 ## Project Overview
 
-GlobalTravel is a simple, clean tourism and hospitality booking website built with **pure HTML, CSS, and JavaScript** (no frameworks). It demonstrates a professional booking system for hotels, tours, local guides, and vehicle rentals.
-
-This project is perfect for university presentations and learning web development fundamentals.
+Beyond Ceylon is a simple, clean tourism and hospitality booking website built with **pure HTML, CSS, and JavaScript** (no frameworks). It demonstrates a professional booking system for hotels, tours, local guides, and vehicle rentals.
 
 ---
 
@@ -276,17 +274,6 @@ Possible features to add:
 - Advanced search filters
 - Booking confirmation emails
 - User profile page
-
----
-
-## Notes for University Presentation
-
-✅ **Code is intentionally simple and easy to understand**
-✅ **No external dependencies or frameworks**
-✅ **Well-commented JavaScript functions**
-✅ **Clean CSS organization**
-✅ **Responsive design for all devices**
-✅ **Professional appearance similar to Booking.com**
 
 ---
 
