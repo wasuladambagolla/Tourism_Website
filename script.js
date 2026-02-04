@@ -40,22 +40,6 @@ function handleLogin(e) {
         setTimeout(function() {
             window.location.href = 'index.html';
         }, 1000);
-    } else if(username === 'admin' && password === 'password123'){
-        alert("Login Successful! Welcome back, " + 'admin');
-        // Redirect to your main landing page
-        window.location.href = "index.html";
-        
-        // Save user to localStorage
-        localStorage.setItem('user', username);
-        
-        // Show success message
-        messageDiv.textContent = 'Success! Redirecting...';
-        messageDiv.className = 'login-message show success';
-        
-        // Redirect after 1 second
-        setTimeout(function() {
-            window.location.href = 'index.html';
-        }, 1000);
     } else {
         // Show error message
         messageDiv.textContent = 'Invalid credentials.';
