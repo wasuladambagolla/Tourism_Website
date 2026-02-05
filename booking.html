@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Ceylon Booking</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="booking">
+
+    <header class="booking-navbar">
+        <div class="booking-logo"><a href="index.html">Beyond Ceylon</a></div>
+    </header>
+
+    <div class="booking-container">
+        <div id="booking-card" class="booking-card">
+            <div class="booking-card-header">
+                <span class="booking-checkmark">✓</span>
+                <h2>Booking Details</h2>
+            </div>
+            <div class="booking-card-body">
+                <h3>Ayubowan!</h3>
+                <p>Would you like to book:</p>
+                <h3 id="display-title" style="color: #d35400;">---</h3>
+            
+            <div class="details-box">
+                <p><strong>Rate/Price:</strong> <span id="display-price">---</span></p>
+                <p><strong>Status:</strong> <span class="badge">Pending Confirmation</span></p>
+            </div>
+                <p class="booking-instruction">Please click "Confirm Booking" below to send your request.</p>
+                <div class="booking-btn-group">
+                    <button class="booking-btn secondary" onclick="history.back()">Change Choice</button>
+                    <button class="booking-btn primary" onclick="showForm()">Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="booking-user-form" class="booking-card" style="display: none;">
+            <div class="booking-card-header blue">
+                <h2>Your Information</h2>
+            </div>
+            <form id="booking-contact-form" class="booking-card-body" action="https://formspree.io/f/mojnapjq" method="POST">
+                <input class="booking-input" type="hidden" name="booking-package_name" value="Golden Beaches">
+                <input class="booking-input" type="hidden" name="price" value="$450">
+
+                <div class="booking-form-group">
+                    <label>Full Name</label>
+                    <input class="booking-input" type="text" name="user_name" required placeholder="Enter your name">
+                </div>
+                <div class="booking-form-group">
+                    <label>Email Address</label>
+                    <input class="booking-input" type="email" name="user_email" required placeholder="your@email.com">
+                </div>
+                <div class="booking-form-group">
+                    <label>Phone Number</label>
+                    <input class="booking-input" type="tel" name="user_phone" required placeholder="+94 7X XXX XXXX">
+                </div>
+                <div class="booking-form-group">
+                    <label>Message/Special Requirements</label>
+                    <textarea name="message" rows="3" placeholder="Any specific requests?"></textarea>
+                </div>
+
+                <div class="booking-btn-group">
+                    <button type="button" class="booking-btn secondary" onclick="hideForm()">Back</button>
+                    <button type="submit" class="booking-btn primary">Send Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

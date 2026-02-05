@@ -570,8 +570,10 @@ footer {
 .header-logo {
     text-align: center;
     margin-bottom: 30px;
-    color: #003580; /* Blue from your header */
+    color: #003580;
+    /* Blue from your header */
 }
+
 .header-logo a {
     text-decoration: none;
     color: #003580;
@@ -585,8 +587,9 @@ footer {
     background: #fff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-top: 5px solid #FFB703; /* Yellow from your search bar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #FFB703;
+    /* Yellow from your search bar */
 }
 
 .register-form h2 {
@@ -651,36 +654,9 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
-/*-*/
-.confirmation-card {
-    max-width: 500px;
-    margin: 50px auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
 
-.status-header {
-    background-color: #27ae60;
-    color: white;
-    padding: 30px;
-}
 
-.check-icon {
-    font-size: 50px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.message-body {
-    padding: 40px;
-    line-height: 1.6;
-}
-
-.details-box {
+#display-title {
     background: #f8f9fa;
     border: 1px solid #eee;
     padding: 15px;
@@ -688,15 +664,110 @@ footer {
     border-radius: 8px;
 }
 
-
-
-.btn-primary { 
-    background: #d35400; 
-    color: white; 
-    padding: 12px 30px; 
-    margin: 5px;
-    margin-bottom: 10px;
-    text-decoration: none; 
-    border-radius: 5px; 
-    
+.booking {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
 }
+
+.booking-navbar {
+    background-color: #003580;
+    padding: 15px 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.booking-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.booking-card {
+    background: white;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.booking-card-header {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.booking-card-header.blue {
+    background-color: #003580;
+}
+
+.booking-checkmark {
+    font-size: 40px;
+    display: block;
+}
+
+.booking-card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.booking-package-name { color: #d35400; font-size: 22px; margin: 10px 0; }
+
+.booking-info-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.booking-input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.booking-form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+.booking-btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.booking-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.primary {
+    background-color: #d35400;
+    color: white;
+}
+
+.secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
